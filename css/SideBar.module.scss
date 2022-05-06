@@ -1,0 +1,20 @@
+.SideBar {
+  position: sticky;
+  top: 0;
+  flex: 0.3;
+  display: grid;
+  border-right: 1px solid var(--back-2);
+}
+
+.Bottom {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.2rem;
+  button {
+    flex: 1;
+    background: var(--back-3);
+    border: 2px solid var(--accent-color);
+  }
+}

@@ -1,0 +1,90 @@
+// For Grid
+.Grid {
+  flex: 1;
+  display: flex;
+  min-height: 30vh;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.Icons {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 70%;
+}
+
+.Card {
+  flex-grow: 1;
+  margin: 0.5rem;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  transition: all 100ms ease-in;
+  border: 1px solid var(--back-2);
+  position: relative;
+  &:hover {
+    background-color: var(--back-3);
+  }
+}
+.Image {
+  padding: 1.5rem;
+  flex: 1;
+  display: grid;
+  place-content: center;
+  img {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+// Details Card For
+.Details {
+  gap: 1rem;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  margin: 0.5rem;
+  overflow: hidden;
+  border-radius: 15px;
+  justify-content: space-between;
+  transition: all 100ms ease-in;
+  border: 1px solid var(--back-3);
+  .Image {
+    background: var(--back-2);
+    border-radius: 8px;
+    img {
+      height: 100px;
+      width: 100px;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  min-width: 70%;
+  justify-content: space-between;
+  padding: 1rem 0;
+  button {
+    padding: 1rem;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    background: var(--back-2);
+    svg {
+      fill: var(--color-3);
+      stroke: var(--color-2);
+      height: 40px;
+      width: 40px;
+    }
+    &:hover {
+      background: var(--back-3);
+    }
+  }
+}

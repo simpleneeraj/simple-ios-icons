@@ -1,0 +1,39 @@
+.GridHeader {
+  flex: 1;
+  width: 100%;
+  top: 50px;
+  z-index: 10;
+  position: sticky;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid var(--back-3);
+  h4 {
+    color: var(--accent-color);
+  }
+}
+.Tabs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+    li {
+      font-weight: 600;
+      color: var(--color-1);
+      font-size: 0.9rem;
+      transition: 100ms ease-in;
+      opacity: 0.6;
+    }
+    .active {
+      opacity: 1;
+      color: var(--accent-color);
+    }
+  }
+}

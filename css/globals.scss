@@ -1,0 +1,43 @@
+@import "./variables";
+
+@font-face {
+  font-family: "InterRegular";
+  src: url("../public/font/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: "InterLight";
+  src: url("../public/font/Inter-Light.ttf");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--back-1);
+  color: var(--color-1);
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "InterRegular", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+  padding: 0.4rem;
+  background: transparent;
+  font-family: "InterRegular";
+}
+
+::selection {
+  background: var(--accent-color);
+  color: var(--back-1);
+}
